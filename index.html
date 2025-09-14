@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Parkir</title>
+  <link rel="stylesheet" href="style.css"> <!-- Hubungkan ke CSS -->
+</head>
+<body>
+  <div class="container">
+    <h2>Kalkulator Parkir</h2>
+    
+    <!-- Pilihan kendaraan -->
+    <label for="vehicle">Pilih Kendaraan:</label>
+    <select id="vehicle">
+      <option value="motor">Motor</option>
+      <option value="mobil">Mobil</option>
+    </select>
+
+    <!-- Input jam -->
+    <label for="hours">Lama Parkir (jam):</label>
+    <input type="number" id="hours" min="1" value="1">
+
+    <!-- Tombol hitung -->
+    <button onclick="hitungBiaya()">Hitung</button>
+
+    <!-- Hasil -->
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="parking.js"></script>
+</body>
+</html>
